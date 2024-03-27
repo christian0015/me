@@ -122,6 +122,12 @@ nav {
     gap: 20px;
 }
 
+.click{
+    color: brown;
+    font-weight: bold;
+    font-size: 18px;
+}
+
 
 .sousSectionSatisfaction {
     margin-top: 200px;
@@ -310,7 +316,7 @@ footer{
 
     .linksDemo,
     .imgDemo {
-        width: 300px;
+        width: 95%;
     }
 
     .sectionContat {
