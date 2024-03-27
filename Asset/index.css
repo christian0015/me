@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Open Sans;
+    font-family: Roboto;
+}
+body{
+    overflow-x: hidden;
+}
+
+.center {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sectionAcceuil {
+    background-image: url("christian-img1.jpg");
+    background-size: cover;
+    color: aliceblue;
+
+}
+
+header,
+#myHeader {
+    padding: 8px 400px 8px 40px;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+    background-color: transparent;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+/* Ajoutez cette règle lorsque le header quitte sa position initiale */
+body.scrolled #myHeader {
+    background-color: rgb(14, 14, 14);
+    /* Fond noir */
+}
+
+.headerCenter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#logo {
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+    font-weight: 600;
+}
+
+.accroche {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 300px 100px 60px 100px;
+}
+
+.phaseAccroche {
+    font-size: 80px;
+    max-width: 500px;
+}
+
+#contactMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: end;
+    border: solid 2px rgb(235, 235, 235);
+    width: 240px;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    transition: .8s;
+}
+
+#contactMe:hover {
+    background-color: rgb(235, 235, 235);
+    color: black;
+}
+
+.sectionDemo {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    padding: 100px 0px 100px 0px;
+}
+
+.textsDemo {
+    display: flex;
+    gap: 100px;
+    padding: 0 5% 0 5%;
+}
+
+.textDemo1 {
+    font-size: 50px;
+    font-weight: bold;
+    min-width: 600px;
+}
+
+.textDemo2 {
+    font-size: 18px;
+}
+
+.imgDemo {
+    width: 600px;
+    border-radius: 8px;
+}
+
+.linksDemo {
+    display: grid;
+    grid-area: 5 3 2;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.sousSectionSatisfaction {
+    margin-top: 200px;
+}
+
+.textSatisfaction1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.textSatisfaction2 {
+    font-size: 20px;
+    max-width: 600px;
+}
+
+.tableauSatisfaction {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sectionContat {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 100px 0 100px 0;
+}
+
+.textContact {
+    margin-left: 50px;
+}
+
+.textContact1 {
+    font-weight: bold;
+    font-size: 50px;
+    max-width: 500px;
+}
+
+.textContact2 {
+    font-size: 20px;
+    max-width: 500px;
+}
+
+.formContact {
+    margin-right: 50px;
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.nom {
+    width: 100%;
+    font-size: 35px;
+}
+
+#mail {
+    width: 100%;
+    font-size: 35px;
+}
+
+#message {
+    font-size: 35px;
+    width: 100%;
+
+}
+
+#submitForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: end;
+    border: solid 2px rgb(56, 56, 56);
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    transition: .8s;
+}
+
+#submitForm:hover {
+    background-color: rgb(43, 43, 43);
+    color: rgb(247, 247, 247);
+}
+
+/* Optionnel : Style pour les icônes */
+.social-icon {
+    font-size: 24px;
+    margin-right: 100px;
+}
+
+.sectionCitation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background: linear-gradient(to bottom right, rgb(255, 238, 0), rgb(212, 0, 255), rgb(88, 88, 88), rgb(43, 255, 0));
+    color: aliceblue;
+    padding: 150px 300px 150px 300px;
+}
+
+.citation {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.auteur {
+    font-size: 30px;
+    text-align: right;
+    font-style: italic;
+}
+
+.sectionLocalisation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 100px 100px 100px 100px;
+    font-size: 25px;
+
+}
+
+.sectionLocalisationPlace {
+    font-size: 30px;
+}
+
+footer{
+    background-color: black;
+    color: aliceblue;
+    padding: 30px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .headerCenter {
+        height: 50px;
+    }
+
+    #logo {
+        font-size: 20px;
+    }
+
+    nav,
+    .linkResaux {
+        display: none
+    }
+
+    .accroche {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 400px 100px 60px 20px;
+    }
+
+    .phaseAccroche {
+        font-size: 45px;
+    }
+
+    #contactMe {
+        margin-top: 40px;
+    }
+
+    .textsDemo {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 0 30px 0 30px;
+    }
+
+    .textDemo1 {
+        font-size: 30px;
+        font-weight: bold;
+        min-width: 280px;
+    }
+
+    .textDemo2 {
+        margin-top: 20px;
+        font-size: 20px;
+
+    }
+
+    .linksDemo,
+    .imgDemo {
+        width: 300px;
+    }
+
+    .sectionContat {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 100px;
+        padding: 100px 0 100px 0;
+    }
+
+    .textContact {
+        margin-left: 20px;
+    }
+
+    .textContact1 {
+        font-weight: bold;
+        font-size: 30px;
+        max-width: 500px;
+    }
+
+    .textContact2 {
+        font-size: 20px;
+        max-width: 500px;
+        padding: 8px;
+    }
+
+    .formContact {
+        margin-right: 0px;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .sousSectionSatisfaction {
+        padding: 50px;
+    }
+
+    .textSatisfaction1 {
+        font-size: 25px;
+    }
+
+    .textSatisfaction2 {
+        font-size: 20px;
+        max-width: 600px;
+    }
+
+    .sectionCitation {
+        padding: 100px 30px 100px 30px;
+    }
+
+    .citation {
+        font-size: 30px;
+    }
+
+    .auteur {
+        font-size: 20px;
+    }
+
+    iframe {
+        width: 280px;
+        height: 280px;
+    }
+
+    footer{
+        font-size: 18px;
+    }
+}
