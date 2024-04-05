@@ -64,7 +64,7 @@
 
         <div class="accroche" data-aos="fade-up">
             <div class="phaseAccroche">Une image en ligne qui vous correspond.</div>
-            <a href="https://api.whatsapp.com/send/?phone=212713088840&text=Je+suis+int%C3%A9ress%C3%A9+par+vos+services%2C+je+souhaite+operer+un+projet+avec+vous&type=phone_number&app_absent=0" id="contactMe">
+            <a href="https://api.whatsapp.com/send/?phone=212713088840&text=Je+suis+int%C3%A9ress%C3%A9+par+vos+services%2C+je+souhaite+mener+un+projet+avec+vous&type=phone_number&app_absent=0" id="contactMe">
                 <div>CONTACT MOI</div>
             </a>
         </div>
@@ -182,15 +182,15 @@
         <div class="formContact">
             Nom <span style="color: #888888;">(obligatoire)</span>
             <br><br>
-            <form action="" method="post">
+            <form id="contactForm">
                 <div style="display: flex; justify-content: space-between; gap: 15px;">
                     <div>
                         <label for="prenom">Prenom</label> <br>
-                        <input type="text" name="prenom" class="nom" /><br />
+                        <input type="text" name="prenom" id="prenom" class="nom" /><br />
                     </div>
                     <div>
                         <label for="nom">Nom de famille</label> <br>
-                        <input type="text" name="nom" class="nom" /><br />
+                        <input type="text" name="nom" id="nom" class="nom" /><br />
                     </div>
                 </div>
                 <br>
@@ -199,7 +199,7 @@
                 <input type="email" name="mail" id="mail" /><br />
                 <br>
                 <!-- <textarea name="message" rows="4" cols="50" id="message"></textarea><br /> -->
-                <div type="submit" id="submitForm">Contacter</div>
+                <button type="submit" id="submitForm">Contacter</button>
             </form>
         </div>
     </div>
@@ -298,27 +298,14 @@
         var nom = document.getElementById("nom").value;
         var email = document.getElementById("mail").value;
 
-        // Créer un objet avec les données du formulaire
-        var formData = new FormData();
-        formData.append("prenom", prenom);
-        formData.append("nom", nom);
-        formData.append("mail", email);
+        // Construire le message WhatsApp avec les données du formulaire
+        var message = encodeURIComponent("Je suis intéressé par vos services. Voici mes coordonnées : \n\nNom : " + nom + "\nPrénom : " + prenom + "\nEmail : " + email);
 
-        // Envoyer les données du formulaire à un script PHP côté serveur
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "envoi_email.php", true);
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-                if (xhr.status === 200) {
-                    // Réponse du serveur
-                    console.log(xhr.responseText);
-                    alert("Votre message a été envoyé avec succès.");
-                } else {
-                    alert("Une erreur s'est produite lors de l'envoi du message.");
-                }
-            }
-        };
-        xhr.send(formData);
+        // Construire l'URL WhatsApp avec le message
+        var whatsappURL = "https://api.whatsapp.com/send/?phone=212713088840&text=" + message;
+
+        // Rediriger vers l'URL WhatsApp
+        window.location.href = whatsappURL;
     });
 </script>
 
