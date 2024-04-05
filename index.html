@@ -11,12 +11,12 @@
         content="Je vous developpe un site web, son design de maniere dynamique et responsive. Que vous cherchiez à créer une application web dynamique, un site e-commerce robuste ou une présence en ligne professionnelle tel qu'un site vitrine, je serai apte pour transformer vos concepts en réalité numérique. Par mes competances de développeur chevronné je maîtrise les langages de programmation modernes et les dernières technologies pour garantir que votre site ou application soit performant, sécurisé et parfaitement adapté à vos besoins.">
     <title>Christian Tuk's</title>
     <link rel="icon" href="christian.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha384-xpW09C35O+MYceXw5X7jkKGFlM/0wSAgSiSafL8r4wqK5uIS/kP00sWGX+pblZIu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" -->
+    <!-- integrity="sha384-xpW09C35O+MYceXw5X7jkKGFlM/0wSAgSiSafL8r4wqK5uIS/kP00sWGX+pblZIu" crossorigin="anonymous"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+
     <style>
     </style>
 </head>
@@ -27,10 +27,18 @@
             <div class="headerCenter" data-aos="fade-up">
                 <div id="logo">Christian Tukunda</div>
                 <nav>
-                    <div class="item">A propos</div>
-                    <div class="item">Calendrie</div>
-                    <div class="item">Contact</div>
-                    <div class="item">Boutique</div>
+                    <a href="https://christian0015.github.io/myself/" class="item">
+                        <div class="item">A propos</div>
+                    </a>
+                    <a href="calendrier.html" class="item">
+                        <div class="item">Calendrier</div>
+                    </a>
+                    <a href="#sectionContat" class="item">
+                        <div class="item">Contact</div>
+                    </a>
+                    <a href="#footer" class="item">
+                        <div class="item">Boutique</div>
+                    </a>
                 </nav>
                 <div class="linkResaux">
                     ee
@@ -48,6 +56,7 @@
 
                     <!-- TikTok -->
                     <i class="fab fa-tiktok"></i>
+                    <i class="fa-brands fa-tiktok"></i>
 
                 </div>
             </div>
@@ -55,7 +64,9 @@
 
         <div class="accroche" data-aos="fade-up">
             <div class="phaseAccroche">Une image en ligne qui vous correspond.</div>
-            <div id="contactMe">CONTACT MOI</div>
+            <a href="https://web.whatsapp.com/send?phone=212713088840" id="contactMe">
+                <div>CONTACT MOI</div>
+            </a>
         </div>
 
     </div>
@@ -158,7 +169,7 @@
         </div>
     </div>
 
-    <div class="sectionContat">
+    <div class="sectionContat" id="sectionContat">
         <div class="textContact">
             <div class="textContact1" data-aos="fade-up">N’HESITEZ PLUS, CONTACTEZ MOI</div>
             <br>
@@ -194,7 +205,8 @@
     </div>
 
     <div class="sectionCitation">
-        <div class="citation" data-aos="fade-up">« VOUS AIDER A VOIR VOTRE ENTREPRISE SE BATIR, UNE TACHE DE PLUS ORDINAIRE. »
+        <div class="citation" data-aos="fade-up">« VOUS AIDER A VOIR VOTRE ENTREPRISE SE BATIR, UNE TACHE DE PLUS
+            ORDINAIRE. »
         </div>
         <div class="auteur" data-aos="fade-up">-Christian Tuk's</div>
     </div>
@@ -203,35 +215,41 @@
         <div>
             <h3 class="sectionLocalisationPlace" data-aos="fade-up">Kinshasa</h3>
             <div data-aos="fade-up">Bandal Kimbondo, Rf Ecole Joyeux Lutins</div>
-            <iframe src="https://mapcarta.com/fr/N5407120196" width="400" height="400" frameborder="0" data-aos="fade-up"></iframe>
+            <iframe src="https://mapcarta.com/fr/N5407120196" width="400" height="400" frameborder="0"
+                data-aos="fade-up"></iframe>
         </div>
         <div>
             <h3 class="sectionLocalisationPlace" data-aos="fade-up">Casablanca</h3>
             <div data-aos="fade-up">Q/Firdaous, Commissariat.
                 Gautier, Ecole ESTEM
             </div>
-            <iframe src="https://mapcarta.com/fr/N3346775601" width="400" height="400" frameborder="0" data-aos="fade-up"></iframe>
+            <iframe src="https://mapcarta.com/fr/N3346775601" width="400" height="400" frameborder="0"
+                data-aos="fade-up"></iframe>
         </div>
     </div>
 
 
-    <footer>
-        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 30px; margin-bottom: 30px;">
+    <footer id="footer">
+        <div
+            style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 30px; margin-bottom: 30px;">
             <div>
                 <h3 data-aos="fade-up">RESTEZ INFORMÉ(E)</h3>
                 <br>
-                <p data-aos="fade-up" style="max-width: 500px;">Inscrivez-vous ! Vous serez informé(e) en avant-première des actualités disponibles. <br>Nous respectons
+                <p data-aos="fade-up" style="max-width: 500px;">Inscrivez-vous ! Vous serez informé(e) en avant-première
+                    des actualités disponibles. <br>Nous respectons
                     votre vie
                     privée et nous ne partagerons jamais vos informations avec un tiers.</p>
             </div>
             <div>
-                <input type="email" name="" id="" placeholder="Adresse e-mail" data-aos="fade-up" style="font-size: 30px; padding: 10px;">
+                <input type="email" name="" id="" placeholder="Adresse e-mail" data-aos="fade-up"
+                    style="font-size: 30px; padding: 10px;">
                 <button type="submit" data-aos="fade-up" style="font-size: 30px; padding: 10px;">S'inscrire</button>
             </div>
             <hr>
         </div>
 
-        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 100px; margin-bottom: 100px;">
+        <div
+            style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 100px; margin-bottom: 100px;">
             <div>
                 <h3 data-aos="fade-up">ASSISTANCE</h3>
                 <p data-aos="fade-up"> Conditions Générales <br>
@@ -243,10 +261,12 @@
                 <h3 data-aos="fade-up">NOUS CONTACTER</h3>
                 <p data-aos="fade-up">christiantukundastocklin@gmail.com<br>
                     +212(063) 469-9940</p>
+                <p data-aos="fade-up"><a href="calendrier.html" style="color: blueviolet;">Calendrier</a></p>
             </div>
             <div>
                 <h3 data-aos="fade-up">PORTEFOLIO</h3>
             </div>
+
         </div>
     </footer>
 </body>
