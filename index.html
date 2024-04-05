@@ -64,7 +64,7 @@
 
         <div class="accroche" data-aos="fade-up">
             <div class="phaseAccroche">Une image en ligne qui vous correspond.</div>
-            <a href="https://web.whatsapp.com/send?phone=212713088840" id="contactMe">
+            <a href="https://api.whatsapp.com/send/?phone=212713088840&text=Je+suis+int%C3%A9ress%C3%A9+par+vos+services%2C+je+souhaite+operer+un+projet+avec+vous&type=phone_number&app_absent=0" id="contactMe">
                 <div>CONTACT MOI</div>
             </a>
         </div>
@@ -284,8 +284,42 @@
             document.body.classList.add("scrolled");
         }
     };
+</script>
 
+ <!-- Script JavaScript -->
+ <script>
+    // Écouteur d'événement pour soumettre le formulaire
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        // Empêcher le comportement par défaut du formulaire (rechargement de la page)
+        event.preventDefault();
+        
+        // Récupérer les données du formulaire
+        var prenom = document.getElementById("prenom").value;
+        var nom = document.getElementById("nom").value;
+        var email = document.getElementById("mail").value;
 
+        // Créer un objet avec les données du formulaire
+        var formData = new FormData();
+        formData.append("prenom", prenom);
+        formData.append("nom", nom);
+        formData.append("mail", email);
+
+        // Envoyer les données du formulaire à un script PHP côté serveur
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "envoi_email.php", true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    // Réponse du serveur
+                    console.log(xhr.responseText);
+                    alert("Votre message a été envoyé avec succès.");
+                } else {
+                    alert("Une erreur s'est produite lors de l'envoi du message.");
+                }
+            }
+        };
+        xhr.send(formData);
+    });
 </script>
 
 </html>
