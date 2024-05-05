@@ -22,7 +22,24 @@ body {
     background-size: cover;
     color: aliceblue;
     position: relative;
+}
+.blurAcceuil{
+    animation: blurs 1s;
+    backdrop-filter: blur(20px);
+}
+@keyframes blurs {
+    0%{
+        backdrop-filter: blur(40px);
+        filter: blur(10px);
+    }
+    80%{
+        backdrop-filter: blur(2px);
+    }
+    100%{
+        backdrop-filter: blur(0px);
+    }
 
+    
 }
 
 .sectionAcceuil::before {
