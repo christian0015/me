@@ -24,8 +24,8 @@ body {
     position: relative;
 }
 .blurAcceuil{
-    animation: blurs 1s;
-    backdrop-filter: blur(20px);
+    animation: blurs 1s ease-in-out;
+    /* backdrop-filter: blur(20px); */
 }
 @keyframes blurs {
     0%{
@@ -34,9 +34,7 @@ body {
     }
     80%{
         backdrop-filter: blur(2px);
-    }
-    100%{
-        backdrop-filter: blur(0px);
+    
     }
 
     
