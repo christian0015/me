@@ -369,14 +369,14 @@ table {
 .nom {
     width: 100%;
     padding: 10px 3px 10px 3px;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 10px;
 }
 
 #mail {
     width: 100%;
     padding: 10px 5px 10px 5px;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 10px;
 }
 
@@ -606,5 +606,14 @@ h3 {
 
     footer {
         font-size: 18px;
+    }
+    .nom {
+        padding: 10px 3px 10px 3px;
+        font-size: 25px;
+    }
+    
+    #mail {
+        padding: 10px 5px 10px 5px;
+        font-size: 25px;
     }
 }
