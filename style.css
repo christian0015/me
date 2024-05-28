@@ -105,6 +105,7 @@ body.scrolled #myHeader {
     font-weight: bold;
 
     color: rgb(193, 144, 238);
+    color: rgb(224, 190, 255);
 }
 
 #menuButton{
@@ -126,6 +127,12 @@ nav {
     font-style: normal;
 }
 
+.DownloadCV{
+    text-decoration: none;
+    color: blueviolet;
+    color: rgb(224, 190, 255);
+}
+nav .DownloadCV{display: none;}
 .setColor {
     color: rgb(224, 190, 255);
 }
@@ -371,6 +378,7 @@ table {
     padding: 10px 3px 10px 3px;
     font-size: 20px;
     border-radius: 10px;
+    border: none;
 }
 
 #mail {
@@ -378,6 +386,7 @@ table {
     padding: 10px 5px 10px 5px;
     font-size: 20px;
     border-radius: 10px;
+    border: none;
 }
 
 #message {
@@ -475,6 +484,7 @@ h3 {
         display: block;
         z-index: 1000;
     }
+    nav .DownloadCV{display: block;}
     nav{
         position: fixed;
         background-color: rgba(51, 51, 51, 0.959);
