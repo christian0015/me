@@ -20,6 +20,7 @@ body {
 .sectionAcceuil {
     background-image: url("christian-img1.jpg");
     background-size: cover;
+    background-position: 0%;
     color: aliceblue;
     position: relative;
 }
@@ -34,14 +35,10 @@ body {
     }
     80%{
         backdrop-filter: blur(2px);
-    
     }
     100%{
         backdrop-filter: blur(.1px);
-    
     }
-
-    
 }
 
 .sectionAcceuil::before {
@@ -49,7 +46,7 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background-color: rgba(0, 0, 0, 0.333);
 }
 
@@ -104,12 +101,12 @@ body.scrolled #myHeader {
 }
 
 #logo {
-    font-size: 25px;
+    font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
 
     color: rgb(193, 144, 238);
-    color: rgb(224, 190, 255);
+    color: rgb(223, 189, 255);
 }
 
 #menuButton{
@@ -151,12 +148,12 @@ nav .DownloadCV{display: none;}
     display: flex;
     justify-content: space-evenly   ;
     flex-wrap: wrap;
-    padding: 190px 100px 120px 100px;
+    padding: 230px 100px 120px 100px;
 }
 
 .phaseAccroche {
-    font-size: 70px;
-    max-width: 500px;
+    font-size: 55px;
+    max-width: 400px;
     font-family: "Exo", sans-serif;
     font-optical-sizing: auto;
     /* font-weight: <>; */
@@ -171,7 +168,7 @@ nav .DownloadCV{display: none;}
     border: solid 2px  rgb(224, 190, 255);
     color: rgb(224, 190, 255);
     width: 240px;
-    height: 50px;
+    height: 40px;
     border-radius: 30px;
     text-align: center;
     text-decoration: none;
@@ -247,9 +244,10 @@ nav .DownloadCV{display: none;}
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    border-radius: 8px;
 }
 
-.linksDemo a{
+.linksDemo a{    
     background-size: cover;
     text-decoration: none;
     color: #f0f0f0;
@@ -257,37 +255,25 @@ nav .DownloadCV{display: none;}
     text-align: center;
     align-content:end;
     width: 600px;
-    height: 10px;
+    height: 200px;
+    border-radius: 8px;
     /* border-image: fill 0 linear-gradient(to top, rgb(85, 35, 82), rgba(255, 255, 255, 0.171)); */
 }
-.linksDemo :nth-child(1) {animation: heighting 2s  linear;height: 200px; border-image: fill 0 linear-gradient(to top, rgb(4, 85, 16), rgba(255, 255, 255, 0.171));}
-.linksDemo :nth-child(2) {animation: heighting 3s  linear;height: 200px; border-image: fill 0 linear-gradient(to top, rgb(57, 35, 85), rgba(255, 255, 255, 0.171));}
-.linksDemo :nth-child(3) {animation: heighting 4s  linear;height: 200px; border-image: fill 0 linear-gradient(to top, rgb(35, 38, 85), rgba(255, 255, 255, 0.171));}
-.linksDemo :nth-child(4) {animation: heighting 5s  linear;height: 200px; border-image: fill 0 linear-gradient(to top, rgb(35, 65, 85), rgba(255, 255, 255, 0.171));}
-.linksDemo :nth-child(5) {animation: heighting 6s  linear;height: 200px; border-image: fill 0 linear-gradient(to top, rgb(178, 180, 16), rgba(255, 255, 255, 0.171));}
-.linksDemo :nth-child(6) {animation: heighting 7s  linear;height: 200px; border-image: fill 0 linear-gradient(to top, rgb(74, 85, 35), rgba(255, 255, 255, 0.171));}
-.linksDemo :nth-child(7) {animation: heighting 8s  linear;height: 200px; border-image: fill 0 linear-gradient(to top, rgb(85, 35, 82), rgba(255, 255, 255, 0.171));}
-.linksDemo :nth-child(8) {animation: heighting 9s  linear;height: 200px; border-image: fill 0 linear-gradient(to top, rgb(125, 134, 73), rgba(255, 255, 255, 0.171));}
-@keyframes heighting {
-    
-    0%{
-        height: 0px;
-        
-    }
-    90%{
-        height: 100px;
-    
-    }
-    100%{
-        height: 200px;
-    
-    }
-    
-}
+.linksDemo :nth-child(1) { border-image: fill 0 linear-gradient(to top, rgb(110, 112, 81), rgba(255, 255, 255, 0.171));}
+.linksDemo :nth-child(2) { border-image: fill 0 linear-gradient(to top, rgb(93, 94, 72), rgba(255, 255, 255, 0.171));}
+.linksDemo :nth-child(3) { border-image: fill 0 linear-gradient(to top, rgb(67, 87, 57), rgba(255, 255, 255, 0.171));}
+.linksDemo :nth-child(4) { border-image: fill 0 linear-gradient(to top, rgb(51, 51, 51), rgba(255, 255, 255, 0.171));}
+.linksDemo :nth-child(5) { border-image: fill 0 linear-gradient(to top, rgb(105, 64, 143), rgba(255, 255, 255, 0.171));}
+.linksDemo :nth-child(6) { border-image: fill 0 linear-gradient(to top, rgb(120, 79, 131), rgba(255, 255, 255, 0.171));}
+.linksDemo :nth-child(7) { border-image: fill 0 linear-gradient(to top, rgb(85, 80, 85), rgba(255, 255, 255, 0.171));}
+.linksDemo :nth-child(8) { border-image: fill 0 linear-gradient(to top, rgb(73, 94, 134), rgba(255, 255, 255, 0.171));}
+.linksDemo :nth-child(9) { border-image: fill 0 linear-gradient(to top, rgb(114, 103, 82), rgba(255, 255, 255, 0.171));}
+.linksDemo :nth-child(10) { border-image: fill 0 linear-gradient(to top, rgb(141, 89, 89), rgba(255, 255, 255, 0.171));}
 
 .click {
     color: brown;
     color: blueviolet;
+    color: #e0beff;
     font-weight: bold;
     font-size: 18px;
 }
@@ -329,6 +315,11 @@ table {
     padding: 80px  20px;
     position: relative;
     overflow-x: hidden;
+}
+
+.sectionTarif h2{
+    color: chocolate;
+    font-weight: 800;
 }
 
 .sectionTarif .img3D{
