@@ -253,7 +253,7 @@ nav .DownloadCV{display: none;}
     color: #f0f0f0;
     padding: 10px 20px;
     text-align: center;
-    align-content:end;
+    align-content:end;align-items: end;
     width: 600px;
     height: 200px;
     border-radius: 8px;
